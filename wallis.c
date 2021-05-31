@@ -5,7 +5,7 @@
 
 
 float wallis_pi(int x){
-  int product = 1;
+  float product = 1;
   float val;
   float pi_value;
   for (int i=1; i<=x;i++){
