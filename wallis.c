@@ -10,8 +10,9 @@ float wallis_pi(int x){
   float pi_value;
   for (int i=1; i<=x;i++){
     val = (4*pow(i,2))/((4*pow(i,2))-1);
-    pi_value = 2*val;
-    return pi_value;
+    product *= val;
+pi_value = 2*product;
+return pi_value;
   }
 }
 float wallis_pi(int);
