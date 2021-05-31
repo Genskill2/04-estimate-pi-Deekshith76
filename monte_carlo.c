@@ -12,18 +12,18 @@ float frandom() {
 }
 
 float mc_pi(int z){
-  int points_in_circle = 0;
-  int points_in_square = 0;
+  float points_in_circle = 0;
+  float points_in_square = 0;
+  float ratio;
   for (int i=1; i<=z; i++){
     float p = frandom();
     float q = frandom();
+    points_in_square += 1;
     if (pow(p,2)+pow(q,2)<=1){
     points_in_circle += 1;
     }
-    points_in_square += 1;
   }
-  float ratio;
-  ratio = float(points_in_circle)/(points_in_square);
+  ratio = (points_in_circle)/(points_in_square);
   float pi_val = 4*ratio;
   return pi_val;
 }
