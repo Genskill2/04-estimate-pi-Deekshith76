@@ -4,7 +4,7 @@
 #include <math.h>
 
 
-int wallis_pi(int x){
+float wallis_pi(int x){
   int product = 1;
   float val;
   float pi_value;
