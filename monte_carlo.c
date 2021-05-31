@@ -19,7 +19,7 @@ float mc_pi(int z){
     float p = frandom();
     float q = frandom();
     points_in_square += 1;
-    if (pow(p,2)+pow(q,2)<=1){
+    if (pow(p,2)+pow(q,2)<=1.0){
     points_in_circle += 1;
     }
   }
