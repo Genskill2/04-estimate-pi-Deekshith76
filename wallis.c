@@ -11,9 +11,9 @@ float wallis_pi(int x){
   for (int i=1; i<=x;i++){
     val = (4*pow(i,2))/((4*pow(i,2))-1);
     product *= val;
-pi_value = 2*product;
-return pi_value;
   }
+  pi_value = 2*product;
+  return pi_value;
 }
 float wallis_pi(int);
 
